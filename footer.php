@@ -1,4 +1,11 @@
-  <script type="text/javascript" src="./assets/js/script.js"></script>
+  </main>
+
+  <footer>
+    Footer
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
