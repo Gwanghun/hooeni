@@ -1,3 +1,4 @@
+<?php include_once "./assets/lib/config.php"; ?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
