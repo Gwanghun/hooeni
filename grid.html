@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style type='text/css'>
+    body { font-size: 1.5rem; }
+    #container { 
+      height: 100vh;
+      background-color: gray;
+
+      display: grid;
+      /* grid-template-columns: 40% 60%; */
+      /* grid-template-columns: 4fr 6fr; */
+      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-template-columns: repeat(3, 1fr); */
+      /* grid-template-columns: 200px 1fr; */
+      /* grid-auto-rows: 200px; */
+      grid-auto-rows: minmax(10em, auto);
+      grid-gap: 1rem;
+      /* justify-items: center; */
+      /* align-items: center; */
+    }
+    .item { 
+      background: rgba(255, 0, 0, 0.5);
+    }
+    .item:nth-child(1) {
+      grid-column: 1/4;
+    }
+    .item:nth-child(4) {
+      grid-column: 3;
+      grid-row: 2/4;
+    }
+    .item:nth-child(5) {
+      justify-self: center;
+      align-self: center;
+    }
+    .item:nth-child(9) {
+      grid-column: 3;
+      grid-row: 3/5;
+    }
+
+
+    .item:nth-child(odd) {
+      background: rgba(255, 255, 0, 0.5);
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id='container'>
+    <div class="item">
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+    </div>
+    <div class="item">
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+    </div>
+    <div class="item">
+      <p> CCCCCCCCCCCCC </p>
+      <p> CCCCCCCCCCCCC </p>
+    </div>
+    <div class="item">
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+    </div>
+    <div class="item">
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+    </div>
+    <div class="item">
+      <p> CCCCCCCCCCCCC </p>
+      <p> CCCCCCCCCCCCC </p>
+      <p> CCCCCCCCCCCCC </p>
+    </div>
+    <div class="item">
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+    </div>
+    <div class="item">
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+    </div>
+    <div class="item">
+      <p> CCCCCCCCCCCCC </p>
+      <p> CCCCCCCCCCCCC </p>
+      <p> CCCCCCCCCCCCC </p>
+    </div>
+  </div>
+
+</body>
+</html>

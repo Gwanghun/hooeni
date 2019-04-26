@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style type='text/css'>
+    body { font-size: 1.5rem; }
+    #container { 
+      height: 100vh;
+      background-color: gray;
+
+      display: flex;
+      /* flex-direction: row; */
+      /* flex-wrap: wrap; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      /* align-content: flex-start; */
+    }
+    .item { 
+      /* flex-grow: 1; */
+      /* flex-basis: 0; */
+     }
+
+    .item:nth-child(1) {
+       background-color: red;
+
+       /* flex-grow: 1; */
+       /* flex-shrink: 1; */
+       flex: 1;
+       /* align-self: flex-start; */
+       order: 3;
+    }
+    .item:nth-child(2) {
+       background-color: blue;
+
+       /* flex-grow: 2; */
+       /* flex-shrink: 2; */
+       flex: 1;
+       /* align-self: center; */
+       order: 1;
+    }
+    .item:nth-child(3) {
+       background-color: yellow;
+
+       /* flex-grow: 1; */
+       /* flex-shrink: 1; */
+       flex: 1;
+       /* align-self: flex-end; */
+       order: 2;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id='container'>
+    <div class="item">
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+      <p> AAAAAAAAAAAAAAAAAA </p>
+    </div>
+    <div class="item">
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+      <p> BBBBBBBBB </p>
+    </div>
+    <div class="item">
+      <p> CCCCCCCCCCCCC </p>
+      <p> CCCCCCCCCCCCC </p>
+      <p> CCCCCCCCCCCCC </p>
+    </div>
+  </div>
+
+</body>
+</html>
